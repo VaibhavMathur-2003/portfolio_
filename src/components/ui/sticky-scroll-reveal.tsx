@@ -40,11 +40,7 @@ export const StickyScroll = ({
     setActiveCard(closestBreakpointIndex);
   });
 
-  const backgroundColors = [
-    "var(--slate-900)",
-    "var(--black)",
-    "var(--neutral-900)",
-  ];
+
   const linearGradients = [
     "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
     "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
@@ -61,14 +57,14 @@ export const StickyScroll = ({
 
   return (
     <motion.div
-      animate={{
-        backgroundColor: backgroundColors[activeCard % backgroundColors.length],
-      }}
-      className="h-[30rem] overflow-y-auto flex justify-between max-w-6xl mx-auto relative space-x-10 rounded-md p-6 no-scrollbar"
+      // animate={{
+      //   backgroundColor: backgroundColors[activeCard % backgroundColors.length],
+      // }}
+      className="h-[40rem] overflow-y-auto bg-gray-900 flex justify-between w-full max-w-5xl my-20 mx-auto relative space-x-10 rounded-xl p-6 no-scrollbar"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">
-        <div className="max-w-6xl">
+        <div className="max-w-7xl">
           {content.map((item, index) => (
             <div key={item.title + index} className="my-20">
               <motion.h2
@@ -76,7 +72,7 @@ export const StickyScroll = ({
                   opacity: 0,
                 }}
                 animate={{
-                  opacity: activeCard === index ? 1 : 0.3,
+                  opacity: activeCard === index ? 1 : 0.5,
                 }}
                 className="text-2xl font-bold text-slate-100"
               >
@@ -87,7 +83,7 @@ export const StickyScroll = ({
                   opacity: 0,
                 }}
                 animate={{
-                  opacity: activeCard === index ? 1 : 0.3,
+                  opacity: activeCard === index ? 1 : 0.5,
                 }}
                 className="text-kg text-slate-300 max-w-sm mt-10"
               >
@@ -95,7 +91,6 @@ export const StickyScroll = ({
               </motion.p>
             </div>
           ))}
-          <div className="h-40" />
         </div>
       </div>
       <div

@@ -3,6 +3,7 @@ import { BackgroundLines } from "@/components/ui/background-lines";
 import ThreeDCardDemo from "@/components/WorkCard";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function page() {
   return (
@@ -20,7 +21,7 @@ export default function page() {
         <BackgroundLines className="flex items-center justify-center w-full flex-col">
           <div className="bg-black p-8 flex justify-center items-center h-screen">
             <h1 className="md:text-7xl text-3xl font-bold text-white glowing-text leading-tight">
-            Turning coffee into code <br /> and ideas into magic.
+              Turning coffee into code <br /> and ideas into magic.
               <p className="md:text-4xl text-xl mt-8 text-end glowing-italic italic font-medium">
                 {" "}
                 - Vaibhav
@@ -41,47 +42,51 @@ export default function page() {
           </div>
         </BackgroundLines>
       </motion.h1>
-              
+      <Link href="/project/finalytics">
         <ThreeDCardDemo
           title="Finalytics"
           description="Stock wishlist analysis using Next.js, GraphQL, and PostgreSQL to track stocks."
           image="/Landing.webp"
         />
+      </Link>
+      <Link href="/project/jeeone">
+        <ThreeDCardDemo
+          title="JEEone"
+          description="JEE Preparation Site using NextJs, Prisma, Postgres, Tailwind."
+          image="/Landing1.webp"
+        />
+      </Link>
+      <Link href="/project/landweb">
+        <ThreeDCardDemo
+          title="Landweb"
+          description="JEE Preparation Site using NextJs, Prisma, Postgres, Tailwind."
+          image="/landweb.webp"
+        />
+      </Link>
 
-      <ThreeDCardDemo
-        title="JEEone"
-        description="JEE Preparation Site using NextJs, Prisma, Postgres, Tailwind."
-        image="/Landing1.webp"
-      />
-
-      <ThreeDCardDemo
-        title="Landweb"
-        description="JEE Preparation Site using NextJs, Prisma, Postgres, Tailwind."
-        image="/landweb.webp"
-      />
-
-<footer className="bg-black text-white py-10">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        <div className="flex flex-col items-center md:items-start">
-          <Image
-            src="/logo.jpg"
-            alt="Logo"
-            className="mb-4"
-            width="100"
-            height="100"
-            style={{ aspectRatio: "100/100", objectFit: "cover" }}
-          />
-          <p className="text-center md:text-left">&copy; 2024 Vaibhav Mathur. All Rights Reserved.</p>
-          <p className="text-center md:text-left text-muted-foreground mt-2">
-            Make sure to check out my projects.
-          </p>
+      <footer className="bg-black text-white py-10">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col items-center md:items-start">
+            <Image
+              src="/logo.jpg"
+              alt="Logo"
+              className="mb-4"
+              width="100"
+              height="100"
+              style={{ aspectRatio: "100/100", objectFit: "cover" }}
+            />
+            <p className="text-center md:text-left">
+              &copy; 2024 Vaibhav Mathur. All Rights Reserved.
+            </p>
+            <p className="text-center md:text-left text-muted-foreground mt-2">
+              Make sure to check out my projects.
+            </p>
+          </div>
         </div>
-       
-      </div>
-      <div className="container mx-auto mt-8 text-center text-muted-foreground">
-        Feel free to contact me through LinkedIn
-      </div>
-    </footer>
+        <div className="container mx-auto mt-8 text-center text-muted-foreground">
+          Feel free to contact me through LinkedIn
+        </div>
+      </footer>
     </div>
   );
 }

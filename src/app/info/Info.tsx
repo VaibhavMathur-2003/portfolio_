@@ -189,6 +189,6 @@ const dummyContent = [
       </>
     ),
     badge: "",
-    image: "/por.png",
+    image: "/por.jpeg",
   },
 ];
