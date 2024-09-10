@@ -1,101 +1,86 @@
-import Image from "next/image";
+"use client";
+import { BackgroundLines } from "@/components/ui/background-lines";
+import ThreeDCardDemo from "@/components/WorkCard";
+import { motion } from "framer-motion";
 
-export default function Home() {
+export default function page() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div className="w-full">
+      <motion.h1
+        initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className=" bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-4xl font-medium tracking-tight text-white md:text-7xl"
+      >
+        <BackgroundLines className="flex items-center justify-center w-full flex-col">
+          <div className="bg-black p-8 flex justify-center items-center h-screen">
+            <h1 className="md:text-7xl text-3xl font-bold text-white glowing-text leading-tight">
+            Turning coffee into code <br /> and ideas into magic.
+              <p className="md:text-4xl text-xl mt-8 text-end glowing-italic italic font-medium">
+                {" "}
+                - Vaibhav
+              </p>
+            </h1>
+            <style jsx>{`
+              .glowing-text {
+                text-shadow: 0 5px 10px rgba(0, 87, 255, 0.15),
+                  0 -5px 10px rgba(255, 255, 255, 0.3),
+                  0 -5px 25px rgba(255, 255, 255, 0.5);
+              }
+              .glowing-italic {
+                text-shadow: 0 5px 15px rgba(0, 87, 255, 0.1),
+                  0 -5px 15px rgba(255, 90, 0, 0.08),
+                  0 0 30px rgba(255, 255, 255, 0.2);
+              }
+            `}</style>
+          </div>
+        </BackgroundLines>
+      </motion.h1>
+              
+        <ThreeDCardDemo
+          title="Finalytics"
+          description="Stock wishlist analysis using Next.js, GraphQL, and PostgreSQL to track stocks."
+          image="/Landing.webp"
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <ThreeDCardDemo
+        title="JEEone"
+        description="JEE Preparation Site using NextJs, Prisma, Postgres, Tailwind."
+        image="/Landing1.webp"
+      />
+
+      <ThreeDCardDemo
+        title="Landweb"
+        description="JEE Preparation Site using NextJs, Prisma, Postgres, Tailwind."
+        image="/landweb.webp"
+      />
+
+<footer className="bg-black text-white py-10">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col items-center md:items-start">
+          <img
+            src="/logo.jpg"
+            alt="Logo"
+            className="mb-4"
+            width="100"
+            height="100"
+            style={{ aspectRatio: "100/100", objectFit: "cover" }}
+          />
+          <p className="text-center md:text-left">&copy; 2024 Vaibhav Mathur. All Rights Reserved.</p>
+          <p className="text-center md:text-left text-muted-foreground mt-2">
+            Make sure to check out my projects.
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+       
+      </div>
+      <div className="container mx-auto mt-8 text-center text-muted-foreground">
+        Feel free to contact me through LinkedIn
+      </div>
+    </footer>
     </div>
   );
 }
