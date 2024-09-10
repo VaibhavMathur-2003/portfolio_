@@ -2,6 +2,7 @@
 import { BackgroundLines } from "@/components/ui/background-lines";
 import ThreeDCardDemo from "@/components/WorkCard";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function page() {
   return (
@@ -62,7 +63,7 @@ export default function page() {
 <footer className="bg-black text-white py-10">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="flex flex-col items-center md:items-start">
-          <img
+          <Image
             src="/logo.jpg"
             alt="Logo"
             className="mb-4"
