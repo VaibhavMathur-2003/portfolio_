@@ -16,7 +16,7 @@ export const StickyScroll = ({
   contentClassName?: string;
 }) => {
   const [activeCard, setActiveCard] = React.useState(0);
-  const ref =  useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     // uncomment line 22 and comment line 23 if you DONT want the overflow container and want to have it change on the entire page scroll
     // target: ref
@@ -40,7 +40,6 @@ export const StickyScroll = ({
     setActiveCard(closestBreakpointIndex);
   });
 
-
   const linearGradients = [
     "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
     "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
@@ -60,7 +59,7 @@ export const StickyScroll = ({
       // animate={{
       //   backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       // }}
-      className="h-[40rem] overflow-y-auto bg-gray-900 flex justify-between w-full max-w-5xl my-20 mx-auto relative space-x-10 rounded-xl p-6 no-scrollbar"
+      className="h-[40rem] overflow-y-auto bg-gray-900 flex justify-between w-full md:my-20 mx-auto relative space-x-10 rounded-xl p-6 no-scrollbar max-w-5xl"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">

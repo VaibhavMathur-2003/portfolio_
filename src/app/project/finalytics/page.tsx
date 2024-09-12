@@ -68,42 +68,31 @@ export default function HeroScrollDemo() {
           alt="hero"
           height={720}
           width={1400}
-          className="mx-auto rounded-2xl object-contain h-full object-left-top"
+          className="mx-auto rounded-2xl h-full object-left-top"
           draggable={false}
         />
       </ContainerScroll>
 
       <StickyScroll content={content} />
-      <div className="flex flex-col w-full justify-center items-center space-y-20 mb-20">
-        <Link
-          href="http://finalytics-six.vercel.app/"
-          className="text-2xl font-semibold"
-        >
-          Visit Finalytics →{" "}
-        </Link>
+      <div className="flex flex-col w-full justify-center items-center space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-20 mb-8 sm:mb-12 md:mb-16 lg:mb-20 px-4 sm:px-6 md:px-8">
+  <Link
+    href="http://finalytics-six.vercel.app/"
+    className="text-xl sm:text-2xl font-semibold hover:underline"
+  >
+    Visit Finalytics →
+  </Link>
 
-        <Image
-          height={1000}
-          width={1000}
-          alt=""
-          src="/Landing2024.webp"
-          className="rounded-xl shadow-purple-500 shadow-xl hover:scale-105"
-        ></Image>
-        <Image
-          height={1000}
-          width={1000}
-          alt=""
-          src="/Dashboard.webp"
-          className="rounded-xl shadow-purple-500 shadow-xl hover:scale-105"
-        ></Image>
-        <Image
-          height={1000}
-          width={1000}
-          alt=""
-          src="/performfin.png"
-          className="rounded-xl shadow-purple-500 shadow-xl hover:scale-105"
-        ></Image>
-      </div>
+  {['/landing2024.webp', '/Dashboard.webp', '/performfin.png'].map((src, index) => (
+    <Image
+      key={index}
+      height={1000}
+      width={1000}
+      alt={`Finalytics screenshot ${index + 1}`}
+      src={src}
+      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-4xl rounded-xl shadow-purple-500 shadow-lg hover:scale-105 transition-transform duration-300"
+    />
+  ))}
+</div>
     </div>
   );
 }

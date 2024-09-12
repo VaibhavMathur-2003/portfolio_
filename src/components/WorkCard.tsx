@@ -13,7 +13,7 @@ interface Props{
 export default function ThreeDCardDemo({title, description, image }:Props) {
   return (
     <CardContainer className="inter-var w-full">
-    <CardBody className="bg-gray-50 hover:bg-[#073249] cursor-pointer relative group/card  bg-gray-900  rounded-xl border shadow-[#56b6ff] shadow-lg md:scale-125  my-20 text-white border-black/[0.1] w-full h-auto rounded-xl p-6 pb-10 border  ">
+    <CardBody className="bg-gray-50 hover:bg-[#073249] cursor-pointer relative group/card  bg-gray-900  rounded-xl border shadow-[#56b6ff] shadow-lg md:scale-125  md:my-20 mb-20 text-white border-black/[0.1] w-full h-auto rounded-xl p-6 pb-10 border  ">
       <CardItem
         translateZ="50"
         className="text-xl font-bold text-white"
