@@ -21,10 +21,10 @@ export default function page() {
         <BackgroundLines className="flex items-center justify-center w-full flex-col">
           <div className="bg-black p-8 flex justify-center items-center h-screen">
             <h1 className="md:text-7xl text-3xl font-bold text-white glowing-text leading-tight">
-              Turning coffee into code <br /> and ideas into magic.
-              <p className="md:text-4xl text-xl mt-8 text-end glowing-italic italic font-medium">
+              Hi, I am Vaibhav <br /> A full stack developer.
+              <p className="md:text-xl text-xs mt-8 text-center tracking-widest glowing-italic font-medium">
                 {" "}
-                - Vaibhav
+                React + NextJS + PostgreSQL + Node + GraphQL + MongoDB + Tailwind
               </p>
             </h1>
             <style jsx>{`

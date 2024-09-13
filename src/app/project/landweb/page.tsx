@@ -74,7 +74,7 @@ export default function HeroScrollDemo() {
           alt="hero"
           height={720}
           width={1400}
-          className="mx-auto rounded-2xl  h-full object-left-top"
+          className="mx-auto rounded-2xl  h-full object-contain"
           draggable={false}
         />
       </ContainerScroll>

@@ -38,7 +38,7 @@ export default function RootLayout({
             >
               <span className="text-lg font-semibold">Portfolio</span>
             </Link>
-            <nav className="flex items-center gap-6 bg-black p-3 px-6 border border-white rounded-full text-sm font-medium">
+            <nav className="flex justify-around max-[768px]:w-full items-center gap-6 bg-black p-3 px-6 border border-white rounded-full text-sm font-medium">
               <Link
                 href="/"
                 className="relative before:absolute before:-bottom-1 before:h-[2px] before:w-0 before:bg-white before:transition-all before:duration-300 hover:before:w-full"
