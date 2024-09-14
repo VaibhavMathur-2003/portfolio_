@@ -23,7 +23,7 @@ export default function ThreeDCardDemo({title, description, image }:Props) {
       <CardItem
         as="p"
         translateZ="60"
-        className="text-gray-300 text-xs max-w-sm mt-2"
+        className="text-gray-300 text-xs  mt-2"
       >
         {description}
       </CardItem>

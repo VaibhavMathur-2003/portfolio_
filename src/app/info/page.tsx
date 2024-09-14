@@ -25,7 +25,9 @@ export default function TimelineDemo() {
               }
             `}</style>
           </div>
+          
           <TracingBeamDemo/>
+          
     </div>
   );
 }

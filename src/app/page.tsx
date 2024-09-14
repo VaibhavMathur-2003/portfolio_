@@ -21,7 +21,7 @@ export default function page() {
         <BackgroundLines className="flex items-center justify-center w-full flex-col">
           <div className="bg-black p-8 flex justify-center items-center h-screen">
             <h1 className="md:text-7xl text-3xl font-bold text-white glowing-text leading-tight">
-              Hi, I am Vaibhav <br /> A full stack developer.
+              Hi, I am Vaibhav. <br /> A Full Stack Developer.
               <p className="md:text-xl text-xs mt-8 text-center tracking-widest glowing-italic font-medium">
                 {" "}
                 React + NextJS + PostgreSQL + Node + GraphQL + MongoDB + Tailwind
@@ -52,14 +52,14 @@ export default function page() {
       <Link href="/project/jeeone">
         <ThreeDCardDemo
           title="JEEone"
-          description="JEE Preparation Site using NextJs, Prisma, Postgres, Tailwind."
+          description="JEE Preparation Site with practice problems and proctored exams using NextJs, Prisma, Postgres, Tailwind."
           image="/Landing1.webp"
         />
       </Link>
       <Link href="/project/landweb">
         <ThreeDCardDemo
           title="Landweb"
-          description="JEE Preparation Site using NextJs, Prisma, Postgres, Tailwind."
+          description="A drag-n-drop responsive landing page builder providing complete code for your designs."
           image="/landweb.webp"
         />
       </Link>
