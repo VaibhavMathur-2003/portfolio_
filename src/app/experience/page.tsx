@@ -96,7 +96,7 @@ export default function TimelineDemo() {
               className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-blue-400 shadow-xl"
             />
             <Image
-              src="/dashboard.webp"
+              src="/Dashboard.webp"
               alt="startup template"
               width={500}
               height={500}

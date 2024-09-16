@@ -70,7 +70,7 @@ export default function RootLayout({
                 LinkedIn
               </Link>
               <Link
-                href="https://drive.google.com/file/d/1Qm9HLHcSn25Vl24zywiy4U8Xo8QkViz2/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1IDRlF3cLIs_EnQpwAK8brKvLGcomoofj/view?usp=drive_link"
                 className="relative before:absolute before:-bottom-1 before:h-[2px] before:w-0 before:bg-white before:transition-all before:duration-300 hover:before:w-full"
                 prefetch={false}
               >
