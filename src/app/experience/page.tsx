@@ -55,107 +55,6 @@ export default function TimelineDemo() {
       ),
     },
     {
-      title: "2024",
-      content: (
-        <div>
-          <div className="space-y-4 mb-10">
-            <p className="font-bold text-2xl">Projects & Internship</p>
-            <ul className="list-disc list-inside space-y-2  text-gray-200 text-base">
-              <div>
-                <span className="font-bold text-2xl text-red-400">•</span> This
-                year, I built amazing, highly advanced, and high-performance
-                projects using technologies like Next.js, GraphQL, and
-                PostgreSQL.
-              </div>
-              <div>
-                <span className="font-bold text-2xl text-yellow-400">•</span>{" "}
-                Worked on website performance and got 100 in most of the Google
-                Lighthouse parameters, including SEO, performance, and
-                accessibility.
-              </div>
-              <div>
-                <span className="font-bold text-2xl text-green-400">•</span> The
-                projects even included a complete drag and drop webpage builder
-                which enabled users to obtain the corresponding code for their
-                designs.
-              </div>
-              <div>
-                <span className="font-bold text-2xl text-blue-400">•</span>{" "}
-                Developed 12+ responsive webpages using HTML, Tailwind CSS, and
-                JavaScript for a Ed-Tech solutions startup.
-              </div>
-            </ul>
-          </div>
-
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="/Landing2.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-blue-400 shadow-xl"
-            />
-            <Image
-              src="/Dashboard.webp"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-blue-400 shadow-xl"
-            />
-          </div>
-        </div>
-      ),
-    },
-    {
-      title: "2023",
-      content: (
-        <div>
-          <div className="space-y-4 mb-10 ">
-            <p className="font-bold text-2xl">Cultrang & Cepheus Fests:</p>
-            <ul className="list-disc list-inside space-y-2 text-gray-200 text-base">
-              <div>
-                <span className="font-bold text-2xl text-red-400">•</span>{" "}
-                Successfully developed couple of MERN stack websites for IIT
-                Goa&apos;s cultural and technical fests, Cultrang and Cepheus.
-              </div>
-              <div>
-                <span className="font-bold text-2xl text-yellow-400">•</span>{" "}
-                The website efficiently handled registration for over 500 users,
-                demonstrating its scalability and reliability.
-              </div>
-              <div>
-                <span className="font-bold text-2xl text-green-400">•</span>{" "}
-                Actively collaborated with the team, effectively resolving
-                conflicts and contributing valuable skills to the codebase.
-              </div>
-              <div>
-                <span className="font-bold text-2xl text-blue-400">•</span>{" "}
-                Beyond website development, also played a crucial role in
-                managing events and conducting workshops for both fests.
-              </div>
-            </ul>
-          </div>
-
-          <div className="grid grid-cols-2 gap-4">
-            <Image
-              src="/cultrang.webp"
-              alt="hero template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-blue-400 shadow-xl"
-            />
-            <Image
-              src="/cepheus.png"
-              alt="feature template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-blue-400 shadow-xl"
-            />
-          </div>
-        </div>
-      ),
-    },
-    {
       title: "2022",
       content: (
         <div>
@@ -186,13 +85,7 @@ export default function TimelineDemo() {
                 </span>{" "}
                 for seamless user experience across devices.
               </div>
-              <div>
-                <span className="font-bold text-2xl text-blue-400">•</span>{" "}
-                <span className="font-semibold">
-                  Collaborated closely with clients
-                </span>{" "}
-                to understand their needs and deliver effective solutions.
-              </div>
+              
             </ul>
           </div>
           <div className="grid grid-cols-2 gap-4">
@@ -214,12 +107,204 @@ export default function TimelineDemo() {
         </div>
       ),
     },
+    {
+      title: "2023",
+      content: (
+        <div>
+          <div className="space-y-4 mb-10 ">
+            <p className="font-bold text-2xl">Cultrang & Cepheus Fests:</p>
+            <ul className="list-disc list-inside space-y-2 text-gray-200 text-base">
+              <div>
+                <span className="font-bold text-2xl text-red-400">•</span>{" "}
+                Successfully developed couple of MERN stack websites for IIT
+                Goa&apos;s cultural and technical fests, Cultrang and Cepheus.
+              </div>
+              <div>
+                <span className="font-bold text-2xl text-yellow-400">•</span>{" "}
+                The website efficiently handled registration for over 500 users,
+                demonstrating its scalability and reliability.
+              </div>
+              <div>
+                <span className="font-bold text-2xl text-green-400">•</span>{" "}
+                Actively collaborated with the team, effectively resolving
+                conflicts and contributing valuable skills to the codebase.
+              </div>
+              
+            </ul>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="/cultrang.webp"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-blue-400 shadow-xl"
+            />
+            <Image
+              src="/cepheus.png"
+              alt="feature template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-blue-400 shadow-xl"
+            />
+          </div>
+        </div>
+      ),
+    },
+    
+    {
+      title: "2024",
+      content: (
+        <div>
+          <div className="space-y-4 mb-10">
+            <p className="font-bold text-2xl">Projects & Internship</p>
+            <ul className="list-disc list-inside space-y-2  text-gray-200 text-base">
+              <div>
+                <span className="font-bold text-2xl text-red-400">•</span> Worked at
+                a startup aimed at providing Ed-Tech software to colleges.
+              </div>
+              <div>
+                <span className="font-bold text-2xl text-yellow-400">•</span>{" "}
+                Developed over 12 responsive webpages using React, Tailwind CSS, and JavaScript, enhancing user experience and visual appeal.
+              </div>
+              <div>
+                <span className="font-bold text-2xl text-blue-400">•</span>{" "}
+                This
+                year, I built amazing, highly advanced, and high-performance
+                projects using technologies like Next.js, GraphQL, and
+                PostgreSQL.
+              </div>
+              
+              
+            </ul>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="/Landing2.webp"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-blue-400 shadow-xl"
+            />
+            <Image
+              src="/Dashboard.webp"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-blue-400 shadow-xl"
+            />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "2025",
+      content: (
+        <div>
+          <div className="space-y-4 mb-10 ">
+            <p className="font-bold text-2xl">Intership at ProcDNA</p>
+            <ul className="list-disc list-inside space-y-2 text-gray-200 text-base">
+              <div>
+                <span className="font-bold text-2xl text-red-400">•</span>{" "}
+                Automated cross-platform data workflows (Figma → Power BI, Tableau → Power BI), reducing manual work by 40%.
+              </div>
+              <div>
+                <span className="font-bold text-2xl text-yellow-400">•</span>{" "}
+                Designed and deployed secure infrastructure on Azure, including SCIM, NSGs, VNETs, and access connectors
+              </div>
+              <div>
+                <span className="font-bold text-2xl text-green-400">•</span>{" "}
+                Worked with technolgies including MCP (Model Context Protocol), Langchain, multimodal agents, etc..
+              </div>
+             
+            </ul>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="/procdna.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-blue-400 shadow-xl"
+            />
+            <Image
+              src="/proc_certi.jpeg"
+              alt="feature template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-blue-400 shadow-xl"
+            />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Certifications",
+      content: (
+        <div>
+          <div className="space-y-4 mb-10">
+            <p className="font-bold text-2xl">
+              Certified by Google, LangChain, Neo4J and others.
+            </p>
+            <ul className="list-disc list-inside space-y-2 text-gray-200 text-base">
+              <div>
+                <span className="font-bold text-2xl text-red-400">•</span>{" "}
+                <span className="font-semibold">
+                  Certification in LangGraph by 
+                </span>{" "}
+                Langchain Academy.
+              </div>
+              <div>
+                <span className="font-bold text-2xl text-yellow-400">•</span>{" "}
+                <span className="font-semibold">
+                  Certification in Transformers and BERT models
+                </span>{" "}
+                by Google Skill Boost.
+              </div>
+              <div>
+                <span className="font-bold text-2xl text-green-400">•</span>{" "}
+                <span className="font-semibold">
+                  LLM certified by Neo4J.
+                </span>{" "}
+                
+              </div>
+              <div>
+                <span className="font-bold text-2xl text-blue-400">•</span>{" "}
+                <span className="font-semibold">
+                  Lakehouse Fundamentals Certified
+                </span>{" "}
+                by Databricks.
+              </div>
+            </ul>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <Image
+              src="/cert_1.png"
+              alt="hero template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-blue-400 shadow-xl"
+            />
+            <Image
+              src="/cert_2.png"
+              alt="feature template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-blue-400 shadow-xl"
+            />
+          </div>
+        </div>
+      ),
+    },
   ];
   return (
     <div className="w-full bbg-black">
       <div className="bbg-black p-8 flex max-w-7xl mx-auto mt-20">
         <h1 className="md:text-5xl text-3xl font-semibold text-white glowing-text md:leading-snug">
-          I&apos;ve been coding for the past 2 years.
+          I&apos;ve been coding for the past 4 years.
           <br /> Here&apos;s a timeline of my journey.
         </h1>
         <style jsx>{`

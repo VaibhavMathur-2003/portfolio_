@@ -9,7 +9,7 @@ export default function TimelineDemo() {
     <div className="w-full bg-black">
         <div className=" p-8 flex max-w-6xl justify-center  mx-auto mt-20">
             <h1 className="md:text-5xl text-3xl font-semibold  text-white glowing-text md:leading-tight">
-            I crash servers, eardrums, and into other players with equal enthusiasm.
+            I code 👨‍💻, strum 🎸, and kick ⚽ with equal enthusiasm. 
             </h1>
             <style jsx>{`
               .glowing-text {

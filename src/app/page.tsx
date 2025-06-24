@@ -24,7 +24,7 @@ export default function page() {
               Hi, I am Vaibhav. <br /> A Full Stack Developer.
               <p className="md:text-xl text-xs mt-8 text-center tracking-widest glowing-italic font-medium">
                 {" "}
-                React + NextJS + PostgreSQL + Node + GraphQL + MongoDB + Tailwind
+                React + NextJS + PostgreSQL + Node + GraphQL + MongoDB + Langchain + MCP + AI
               </p>
             </h1>
             <style jsx>{`
@@ -42,11 +42,18 @@ export default function page() {
           </div>
         </BackgroundLines>
       </motion.h1>
+      <Link href="/project/change">
+        <ThreeDCardDemo
+          title="Change"
+          description="Personalized Healthcare Assistant using Next.js, MongoDB and AI."
+          image="/change_1.png"
+        />
+      </Link>
       <Link href="/project/finalytics">
         <ThreeDCardDemo
           title="Finalytics"
           description="Stock wishlist analysis using Next.js, GraphQL, and PostgreSQL to track stocks."
-          image="/Landing.webp"
+          image="/landing.png"
         />
       </Link>
       <Link href="/project/jeeone">
@@ -60,7 +67,7 @@ export default function page() {
         <ThreeDCardDemo
           title="Landweb"
           description="A drag-n-drop responsive landing page builder providing complete code for your designs."
-          image="/landweb.webp"
+          image="/landweb.png"
         />
       </Link>
 

@@ -9,18 +9,17 @@ const content = [
   {
     title: "Idea",
     description:
-      "Faced with the challenge of helping users efficiently manage and analyze their stock wishlists, I developed a web application made for personalized stock tracking and analysis.",
+      "Driven by the need for personalized and accessible health management, I built an AI-powered platform that delivers custom workout and meal plans based on user preferences, goals, and constraints.",
     content: (
       <div className="h-full w-full bg-gradient-to-br from-cyan-500 to-emerald-500 flex items-center justify-center text-white">
         IDEA
       </div>
     ),
   },
-
   {
     title: "Features",
     description:
-      "Enabled users to authenticate, create multiple wishlists, add stocks to their wishlists, and view detailed information about their wishlists, including how the stocks have performed over different time periods. This would give users a better way to track their investments and make more informed decisions.",
+      "Users can chat with an intelligent health assistant powered by GROQ LLM APIs, receive adaptive fitness and meal plans. State persistence ensures a seamless experience across sessions.",
     content: (
       <div className="h-full w-full bg-gradient-to-br from-orange-500 to-yellow-500 flex items-center justify-center text-white">
         FEATURES
@@ -30,9 +29,9 @@ const content = [
   {
     title: "Tech Stack",
     description:
-      "Next.js, PostgreSQL, GraphQL, Prisma, Tailwind CSS, NextAuth v5, TypeScript and ShadCN.",
+      "Next.js 14+, Node, MongoDB, GROQ LLM APIs, Tailwind CSS, TypeScript, ShadCN for UI, and Vercel for deployment.",
     content: (
-      <div className="h-full w-full  flex items-center justify-center text-white bg-gradient-to-br from-purple-600 to-sky-400">
+      <div className="h-full w-full flex items-center justify-center text-white bg-gradient-to-br from-purple-600 to-sky-400">
         TECH STACK
       </div>
     ),
@@ -40,7 +39,7 @@ const content = [
   {
     title: "Performance",
     description:
-      "Achieved exceptional Google Lighthouse scores, earning a perfect 100 in both best practices and SEO, demonstrating its adherence to industry standards and optimization for search engines.",
+      "Optimized for speed and accessibility with a Lighthouse score of 95+ across performance and SEO. Leveraged image optimization, prefetching, and SSR for responsive UX.",
     content: (
       <div className="h-full w-full bg-gradient-to-br from-cyan-500 to-emerald-500 flex items-center justify-center text-white">
         PERFORMANCE
@@ -57,14 +56,14 @@ export default function HeroScrollDemo() {
           <>
             <h1 className="text-4xl font-semibold text-white">
               <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                Finalytics
+                Change
               </span>
             </h1>
           </>
         }
       >
         <Image
-          src={`/landing.png`}
+          src={`/change_1.png`}
           alt="hero"
           height={720}
           width={1400}
@@ -74,25 +73,30 @@ export default function HeroScrollDemo() {
       </ContainerScroll>
 
       <StickyScroll content={content} />
-      <div className="flex flex-col w-full justify-center items-center space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-20 mb-8 sm:mb-12 md:mb-16 lg:mb-20 px-4 sm:px-6 md:px-8">
-  <Link
-    href="http://finalytics-six.vercel.app/"
-    className="text-xl sm:text-2xl font-semibold hover:underline"
-  >
-    Visit Finalytics →
-  </Link>
 
-  {['/landing2024.webp', '/Dashboard.webp', '/performfin.png'].map((src, index) => (
-    <Image
-      key={index}
-      height={1000}
-      width={1000}
-      alt={`Finalytics screenshot ${index + 1}`}
-      src={src}
-      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-4xl rounded-xl shadow-purple-500 shadow-lg hover:scale-105 transition-transform duration-300"
-    />
-  ))}
-</div>
+      <div className="flex flex-col w-full justify-center items-center space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-20 mb-8 sm:mb-12 md:mb-16 lg:mb-20 px-4 sm:px-6 md:px-8">
+        <Link
+          href="https://uchange.vercel.app/"
+          className="text-xl sm:text-2xl font-semibold hover:underline"
+        >
+          Visit Wellness AI →
+        </Link>
+
+        {[
+        "/change_3.png",
+        "/change_4.png",
+          "/change_2.png"
+        ].map((src, index) => (
+          <Image
+            key={index}
+            height={1000}
+            width={1000}
+            alt={`Wellness AI screenshot ${index + 1}`}
+            src={src}
+            className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-4xl rounded-xl shadow-emerald-500 shadow-lg hover:scale-105 transition-transform duration-300"
+          />
+        ))}
+      </div>
     </div>
   );
 }

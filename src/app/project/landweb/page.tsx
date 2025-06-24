@@ -33,7 +33,7 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white bg-gradient-to-br from-purple-600 to-sky-400">
         <Image
-          src="/landweb.webp"
+          src="/landweb.png"
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -70,7 +70,7 @@ export default function HeroScrollDemo() {
         }
       >
         <Image
-          src={`/landweb.webp`}
+          src={`/landweb.png`}
           alt="hero"
           height={720}
           width={1400}
