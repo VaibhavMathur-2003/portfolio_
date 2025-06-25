@@ -53,7 +53,7 @@ export default function page() {
         <ThreeDCardDemo
           title="Finalytics"
           description="Stock wishlist analysis using Next.js, GraphQL, and PostgreSQL to track stocks."
-          image="/landing.png"
+          image="/Landing.png"
         />
       </Link>
       <Link href="/project/jeeone">

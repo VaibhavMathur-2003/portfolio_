@@ -50,7 +50,7 @@ export const MaskContainer = ({
       }}
     >
       <motion.div
-        className="w-full h-full flex items-center justify-center text-6xl absolute bg-black bg-grid-white/[0.2] text-white [mask-image:url(/landing.png)] [mask-size:40px] [mask-repeat:no-repeat]"
+        className="w-full h-full flex items-center justify-center text-6xl absolute bg-black bg-grid-white/[0.2] text-white [mask-image:url(/Landing.png)] [mask-size:40px] [mask-repeat:no-repeat]"
         animate={{
           maskPosition: `${mousePosition.x! - maskSize / 2}px ${mousePosition.y! - maskSize / 2}px`,
           maskSize: `${maskSize}px`,
