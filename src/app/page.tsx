@@ -22,9 +22,10 @@ export default function page() {
           <div className="bg-black p-8 flex justify-center items-center h-screen">
             <h1 className="md:text-7xl text-3xl font-bold text-white glowing-text leading-tight">
               Hi, I am Vaibhav. <br /> A Full Stack Developer.
-              <p className="md:text-xl text-xs mt-8 text-center tracking-widest glowing-italic font-medium">
+              <p className="text-xs md:text-xl mt-8 tracking-widest leading-[2] md:leading-[2] glowing-italic font-medium max-w-2xl">
                 {" "}
-                React + NextJS + PostgreSQL + Node + GraphQL + MongoDB + Langchain + MCP + AI
+                React | NextJS | PostgreSQL | Node | GraphQL | MongoDB 
+                | Docker | AWS | gRPC | Tailwind | Prisma | TypeScript
               </p>
             </h1>
             <style jsx>{`
@@ -82,9 +83,7 @@ export default function page() {
               height="100"
               style={{ aspectRatio: "100/100", objectFit: "cover" }}
             />
-            <p className="text-center md:text-left">
-              &copy; 2024 Vaibhav Mathur. All Rights Reserved.
-            </p>
+           
             <p className="text-center md:text-left text-muted-foreground mt-2">
               Make sure to check out my projects.
             </p>

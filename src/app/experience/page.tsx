@@ -204,7 +204,7 @@ export default function TimelineDemo() {
       content: (
         <div>
           <div className="space-y-4 mb-10 ">
-            <p className="font-bold text-2xl">Intership at ProcDNA</p>
+            <p className="font-bold text-2xl">Internship at ProcDNA</p>
             <ul className="list-disc list-inside space-y-2 text-gray-200 text-base">
               <div>
                 <span className="font-bold text-2xl text-red-400">•</span>{" "}
