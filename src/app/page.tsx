@@ -27,6 +27,7 @@ export default function page() {
                 React | NextJS | PostgreSQL | Node | GraphQL | MongoDB 
                 | Docker | AWS | gRPC | Tailwind | Prisma | TypeScript
               </p>
+              <p className="text-xs md:text-xl mt-8 tracking-widest leading-[2] md:leading-[2] glowing-italic text-gray-500 font-medium max-w-2xl">Bachelor of Technology in Computer Science Engineering from IIT Goa</p>
             </h1>
             <style jsx>{`
               .glowing-text {

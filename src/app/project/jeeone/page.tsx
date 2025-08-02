@@ -39,7 +39,6 @@ const timeline = [
 export default function JEEoneLanding() {
   return (
     <div className="flex flex-col text-white overflow-hidden bg-black">
-      {/* Hero Section */}
       <ContainerScroll
         titleComponent={
           <>
@@ -62,8 +61,16 @@ export default function JEEoneLanding() {
         />
       </ContainerScroll>
 
-      {/* Timeline / Features */}
       <section className="relative z-10 w-full max-w-7xl mx-auto px-4 py-24">
+        <div className="text-center mb-16">
+          <Link
+            href="https://jeeone.vercel.app/"
+            className="group relative inline-flex items-center justify-center gap-6 w-full max-w-lg px-12 py-6 bg-gradient-to-r from-purple-700 to-pink-600 rounded-xl font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25"
+          >
+            <span className="relative z-10 text-xl text-white">Visit Website</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-700 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </Link>
+        </div>
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-emerald-500 bg-clip-text text-transparent mb-4">
             Why JEEone Works
@@ -103,18 +110,9 @@ export default function JEEoneLanding() {
         </div>
       </section>
 
-      {/* Screenshots + CTA */}
       <section className="w-full py-24 px-6 sm:px-8 md:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <Link
-              href="https://jeeone.vercel.app/"
-              className="inline-flex items-center gap-2 text-2xl font-semibold bg-gradient-to-r from-green-400 to-emerald-500 text-transparent bg-clip-text hover:from-green-300 hover:to-emerald-400 transition-all duration-300 group"
-            >
-              Visit JEEone
-              <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
-            </Link>
-          </div>
+          
 
           <div className="grid gap-12 lg:gap-16">
             {["/Landing2.webp", "/qslist.png", "/performjee.png"].map((src, index) => (

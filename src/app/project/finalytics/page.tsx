@@ -39,7 +39,6 @@ const timeline = [
 export default function FinalyticsLanding() {
   return (
     <div className="flex flex-col text-white overflow-hidden bg-black">
-      {/* Hero Section */}
       <ContainerScroll
         titleComponent={
           <>
@@ -62,8 +61,17 @@ export default function FinalyticsLanding() {
         />
       </ContainerScroll>
 
-      {/* Features Timeline Section */}
       <section className="relative z-10 w-full max-w-7xl mx-auto px-4 py-24">
+        <div className="text-center mb-16">
+          <Link
+            href="https://finalytics-six.vercel.app/"
+            className="group relative inline-flex items-center justify-center gap-6 w-full max-w-lg px-12 py-6 bg-gradient-to-r from-purple-700 to-pink-700 rounded-xl font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/25"
+          >
+            <span className="relative z-10 text-xl text-white">Visit Website</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </Link>
+        </div>
+
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
             Why Finalytics Stands Out
@@ -81,19 +89,16 @@ export default function FinalyticsLanding() {
                 key={idx}
                 className="group relative bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/20"
               >
-                {/* Background glow */}
                 <div
                   className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity duration-500`}
                 ></div>
 
-                {/* Icon */}
                 <div
                   className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br ${item.color} mb-6 group-hover:scale-110 transition-transform duration-300`}
                 >
                   <Icon className="w-8 h-8 text-white" />
                 </div>
 
-                {/* Content */}
                 <h3 className={`text-2xl font-bold mb-4 bg-gradient-to-r ${item.color} bg-clip-text text-transparent`}>
                   {item.title}
                 </h3>
@@ -101,7 +106,6 @@ export default function FinalyticsLanding() {
                   {item.description}
                 </p>
 
-                {/* Decorative dots */}
                 <div className="absolute top-4 right-4 w-2 h-2 bg-purple-500 rounded-full opacity-50 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="absolute bottom-4 right-6 w-1 h-1 bg-pink-500 rounded-full opacity-30 group-hover:opacity-70 transition-opacity duration-300"></div>
               </div>
@@ -110,18 +114,9 @@ export default function FinalyticsLanding() {
         </div>
       </section>
 
-      {/* Screenshots */}
       <section className="w-full py-24 px-6 sm:px-8 md:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <Link
-              href="http://finalytics-six.vercel.app/"
-              className="inline-flex items-center gap-2 text-2xl font-semibold bg-gradient-to-r from-green-400 to-emerald-500 text-transparent bg-clip-text hover:from-green-300 hover:to-emerald-400 transition-all duration-300 group"
-            >
-              Visit Finalytics
-              <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
-            </Link>
-          </div>
+          
 
           <div className="grid gap-12 lg:gap-16">
             {["/landing2024.webp", "/Dashboard.webp", "/performfin.png"].map((src, index) => (
