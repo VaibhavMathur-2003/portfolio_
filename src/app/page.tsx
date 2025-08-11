@@ -22,9 +22,9 @@ export default function page() {
           <div className="bg-black p-8 flex justify-center items-center h-screen">
             <h1 className="md:text-7xl text-3xl font-bold text-white glowing-text leading-tight">
               Hi, I am Vaibhav. <br /> A Full Stack Developer.
-              <p className="text-xs md:text-xl mt-8 tracking-widest leading-[2] md:leading-[2] glowing-italic font-medium max-w-2xl">
+              <p className="text-xs md:text-xl mt-8 tracking-widest leading-[2] md:leading-[2] glowing-italic font-medium max-w-3xl">
                 {" "}
-                React | NextJS | PostgreSQL | Node | GraphQL | MongoDB 
+                React | NextJS | PostgreSQL | Node | GraphQL | Websockets | MongoDB 
                 | Docker | AWS | gRPC | Tailwind | Prisma | TypeScript
               </p>
               <p className="text-xs md:text-xl mt-8 tracking-widest leading-[2] md:leading-[2] glowing-italic text-gray-500 font-medium max-w-2xl">Bachelor of Technology in Computer Science Engineering from IIT Goa</p>
@@ -49,6 +49,13 @@ export default function page() {
           title="Change"
           description="Personalized Healthcare Assistant using Next.js, MongoDB and AI."
           image="/change_1.png"
+        />
+      </Link>
+      <Link href="/project/lmchat">
+        <ThreeDCardDemo
+          title="ChatLM"
+          description="Multi User Multi LLM chat app to brainstorm with GPT-oss, Deepseek, Qwen, Llama."
+          image="/lmchat.png"
         />
       </Link>
       <Link href="/project/finalytics">
